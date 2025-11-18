@@ -35,43 +35,7 @@ function generate() {
      times = -1;
 }
 generate()
-document.addEventListener("input", (event) => {
-    if (event.data === letterCycled) {
-        times++
-        score++
-          wordCycle++
-        console.log(score)
-     
-    
-        
-        console.log("Congrats", "The letter is: " + letterCycled)
-      
-    
-        if (wordCycle >= currentWord.length) {
-            
-             
-       generate()
-       return;
-       
-        }
 
-        else {
-           
-        
-        ans = currentWord.charAt(score - 1)
-         letterCycled = currentWord.charAt(wordCycle)        
-        }
-
-        
-         scorer.innerHTML = "Score: " + score
-    }
-
-   else {
-     scorer.innerHTML = "Score: " + score
-    score--
-   }
-   
-})
 document.addEventListener("keydown", (event) => {
     if (event.key === letterCycled) {
         times++
