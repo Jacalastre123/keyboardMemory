@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wanting a keyboard challenge? Play Keyboard Memory, it will be tough">
     <title>Keyboard Memory game</title>
     <meta name="google-site-verification" content="rBEhW9MugYE6g84ujeJ4sbt90DhMpjkgjt4nfNBnT8M" />
            <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,12 +13,14 @@
 </head>
 <body>
     <h1>Keyboard Memory game</h1>
+    <div class="boxes">
    <h3 id="shows"></h3>
    <h5 id="timer">60s</h5>
    <h5 id="scorers">Score: 0</h5>
    <div>
-    <h4 id="keys"></h4>
+    <h4 id="keys">Your keys here, try typing.</h4>
    </div>
+        </div>
    <dialog id="dial">
     <h3>You lost</h3>
     <p id="scoreShow">You got: 0</p>
@@ -26,6 +29,10 @@
    </dialog>
    <button onclick="play()">Play</button>
    <input type="text" class="hidden" placeholder="For Mobile Players">
+    <div class="boxes"> 
+    <h4>How to play:</h4>
+        <p>This is Keyboard Memory game, it is like Hasbro(tm)'s Simon game but it uses all your keyboard letters!</p>
+        </div>
     <footer><hr><a href="https://discord.gg/f7w6a8wmWJ"><button>My Discord</button></a></footer>
    <script src="Value.js"></script>
    
