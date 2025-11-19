@@ -15,9 +15,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Keyboard Memory Game</h1>
+    <h1>Memory Key</h1>
     <div class="boxes">
-   <h3 id="shows">abc...</h3>
+   <h3 id="shows">abc... Click Start</h3>
    <h5 id="timer">60s</h5>
    <h5 id="scorers">Score: 0</h5>
    <h5 id="highScorers">High Score: 0</h5>
@@ -31,8 +31,9 @@
     <button onclick="dial.close()">Close</button>
     
    </dialog>
-   <button onclick="play()">Play</button>
-   <input type="text" class="hidden" placeholder="For Mobile Players">
+   <button onclick="play(this)" id="playBut">Play</button>
+   <button onclick="resetHigh()">Reset High Score</button>
+   <input type="text" class="hidden" placeholder="For Mobile Players" id="codable">
     <div class="boxes"> 
     <h4>How to play: (Game only playable on Computer)</h4>
         <p>This is Keyboard Memory game, it is like Hasbro(tm)'s Simon game but it uses all your keyboard letters!</p>
@@ -41,6 +42,7 @@
    <script src="Value.js"></script>
    <script src="main.js"></script>
    <script src="keyboardPop.js"></script>
+   <script src="codes.js"></script>
     
    
 </body>
