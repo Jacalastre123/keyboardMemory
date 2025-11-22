@@ -76,7 +76,7 @@ document.addEventListener("keydown", checks)
 
     function checks(event) {
     scoreShow.innerHTML = "Score: " + score
-    if (event.key === letterCycled || event.data === letterCycled || codeValue === letterCycled) {
+    if (event.key === letterCycled || codeValue === letterCycled) {
         times++
         score += 1
         scoreShow.innerHTML = "Score: " + score
