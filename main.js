@@ -76,7 +76,7 @@ document.addEventListener("keydown", checks)
 
     function checks(event) {
     scoreShow.innerHTML = "Score: " + score
-    if (event.key === letterCycled) {
+    if (event.key === letterCycled || event.data === letterCycled) {
         times++
         score += 1
         scoreShow.innerHTML = "Score: " + score
@@ -117,6 +117,7 @@ document.addEventListener("keydown", checks)
                 highScorer.innerHTML = "High Score: " + highScore
             }
            document.removeEventListener("keydown", checks)
+	   		document.removeEventListener("input", checks)
             scoreShow.innerHTML = "Score: " + score + "<br>Word is: " + currentWord + "<br>High Score: " + highScore;
             document.getElementById("playBut").disabled = false
     dial.showModal()
