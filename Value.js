@@ -34,7 +34,7 @@ let alphaList = [
     const highScorer = document.getElementById("highScorers")
     const scoreShow = dial.querySelector("#scoreShow")
     const codable = document.getElementById("codable")
-        const message = document.getElementById("message")
+        const messagers = document.getElementById("message")
         const keys = document.getElementById("keys")
     let score = 0
 
