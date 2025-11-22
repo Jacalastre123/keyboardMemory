@@ -3,7 +3,7 @@ highScorer.innerHTML = "High Score: " + highScore
 function generate() {
     codable.value = ""
     scoreShow.innerHTML = "Score: " + score;
-	speed += 20
+	speed += 80
     pickerNum = Math.floor(Math.random() * 26)
     wordCycle = 0
     
@@ -21,7 +21,7 @@ function generate() {
     setTimeout(function() {
         shows.innerHTML = "Type it!"
 	
-    }, 780 + speed)
+    }, 720 + speed)
   
   
     ans = currentWord
