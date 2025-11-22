@@ -42,7 +42,7 @@ button.disabled = true
     inter = setInterval(function() {
         clock--
         if (clock <= 0) {
-            
+            messagers.innerHTML = "Times Up!"
             button.disabled = false
             dial.showModal()
             scoreShow.innerHTML = "Score: " + score + "<br>Word is: " + currentWord + "<br>High Score: " + highScore;
@@ -51,7 +51,7 @@ button.disabled = true
                 highScore = score
                 localStorage.setItem("highScore", highScore)
                 highScorer.innerHTML = "High Score: " + highScore
-				message.innerHTML = "New High Score!"
+				messagers.innerHTML = "New High Score!"
 				scoreShow.innerHTML = "Score: " + score + "<br>Word is: " + currentWord + "<br>High Score: " + highScore;
             }
            
@@ -109,12 +109,13 @@ document.addEventListener("keydown", checks)
 
    else {
      scorer.innerHTML = "Score: " + score
-
+messagers.innerHTML = "You lost"
     clearInterval(inter)
        if (score >= highScore) {
                 highScore = score 
                 localStorage.setItem("highScore", highScore)
                 highScorer.innerHTML = "High Score: " + highScore
+		   messagers.innerHTML = "New High Score!"
             }
            document.removeEventListener("keydown", checks)
 	   		document.removeEventListener("input", checks)
