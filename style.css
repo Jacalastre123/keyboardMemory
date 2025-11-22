@@ -29,7 +29,9 @@ input::placeholder {
 dialog {
     background-color: lightgray;
     border-radius: 5px;
-    width: 4em;
+    width: 8em;
+    padding: 10px;
+    
 
 }
 
